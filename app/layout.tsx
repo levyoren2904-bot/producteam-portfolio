@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       'High-performance product design and UX studio for command centers, defense platforms, and complex enterprise systems.',
     images: [
       {
-        url: 'https://producteam-portfolio.vercel.app/og-image.png',
+          url: 'https://producteam-portfolio.vercel.app/og-image-v2.png',
         width: 1200,
         height: 630,
         alt: 'producTeam - Product Design for Critical Systems',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: 'producTeam | Product Design & UX for Critical Systems',
     description:
       'producTeam designs mission-critical UX/UI and digital products that improve decision-making and business performance.',
-    images: ['https://producteam-portfolio.vercel.app/og-image.png'],
+      images: ['https://producteam-portfolio.vercel.app/og-image-v2.png'],
   },
   robots: {
     index: true,
@@ -75,7 +75,7 @@ export default function RootLayout({
         <StructuredData data={getWebsiteSchema()} />
         {/* Additional OG tags for WhatsApp compatibility */}
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:secure_url" content="https://producteam-portfolio.vercel.app/og-image.png" />
+        <meta property="og:image:secure_url" content="https://producteam-portfolio.vercel.app/og-image-v2.png" />
       </head>
       <body className="bg-background text-text antialiased">
         {children}
