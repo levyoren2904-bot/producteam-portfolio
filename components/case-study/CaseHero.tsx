@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Container } from '@/components/layout';
 import { Badge } from '@/components/ui';
+import { cn } from '@/lib/utils';
 import type { CaseStudyFrontmatter } from '@/lib/mdx';
 
 interface CaseHeroProps {
@@ -139,13 +140,18 @@ export function CaseHero({ frontmatter }: CaseHeroProps) {
         className="relative"
       >
         <Container size="wide">
-          <div className="relative aspect-[21/9] overflow-hidden rounded-t-xl border border-b-0 border-border bg-surface-elevated">
+          <div className={cn(
+            "relative overflow-hidden rounded-t-xl border border-b-0 border-border bg-surface-elevated",
+            frontmatter.slug === 'israels-public-diplomacy-website' 
+              ? "aspect-hero-tall" 
+              : "aspect-[21/9]"
+          )}>
             {thumbnail ? (
               <Image
                 src={thumbnail}
                 alt={title}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 priority
               />
             ) : (

@@ -39,7 +39,12 @@ export function ImageGallery({ images }: ImageGalleryProps) {
           >
             <button
               onClick={() => setSelectedImage(index)}
-              className="block aspect-video w-full"
+              className={cn(
+                "block w-full",
+                image.src?.includes("Israel's Public Diplomacy") 
+                  ? "aspect-[16/12]" 
+                  : "aspect-video"
+              )}
             >
               <div className="relative h-full w-full">
                 {image.src ? (
@@ -47,7 +52,7 @@ export function ImageGallery({ images }: ImageGalleryProps) {
                     src={image.src}
                     alt={image.alt}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center bg-surface">

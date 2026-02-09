@@ -36,7 +36,10 @@ export function CaseCard({ case_, index = 0, featured = false }: CaseCardProps) 
         {/* Image */}
         <div
           className={cn(
-            'relative aspect-case-study overflow-hidden bg-surface-elevated',
+            'relative overflow-hidden bg-surface-elevated',
+            case_.slug === 'israels-public-diplomacy-website'
+              ? 'aspect-case-study-tall'
+              : 'aspect-case-study',
             featured && 'lg:w-3/5'
           )}
         >
@@ -45,7 +48,7 @@ export function CaseCard({ case_, index = 0, featured = false }: CaseCardProps) 
               src={case_.thumbnail}
               alt={case_.title}
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
             />
           ) : (
             <div className="absolute inset-0 flex items-center justify-center">

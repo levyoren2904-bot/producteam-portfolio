@@ -255,8 +255,16 @@
     aspect-ratio: 16 / 10;
   }
 
+  .aspect-case-study-tall {
+    aspect-ratio: 16 / 12;
+  }
+
   .aspect-hero {
     aspect-ratio: 3 / 2;
+  }
+
+  .aspect-hero-tall {
+    aspect-ratio: 16 / 12;
   }
 }
 
