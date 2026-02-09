@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       'High-performance product design and UX studio for command centers, defense platforms, and complex enterprise systems.',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://producteam-portfolio.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'producTeam - Product Design for Critical Systems',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: 'producTeam | Product Design & UX for Critical Systems',
     description:
       'producTeam designs mission-critical UX/UI and digital products that improve decision-making and business performance.',
-    images: ['/og-image.png'],
+    images: ['https://producteam-portfolio.vercel.app/og-image.png'],
   },
   robots: {
     index: true,
