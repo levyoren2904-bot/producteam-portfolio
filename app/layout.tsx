@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://producteam.studio',
+    url: 'https://producteam-portfolio.vercel.app',
     siteName: 'producTeam',
     title: 'producTeam | Product Design & UX for Critical Systems',
     description:

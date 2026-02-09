@@ -5,8 +5,8 @@ export function getOrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'producTeam',
-    url: 'https://producteam.studio',
-    logo: 'https://producteam.studio/logo.png',
+    url: 'https://producteam-portfolio.vercel.app',
+    logo: 'https://producteam-portfolio.vercel.app/producTeam-logo.svg',
     description:
       'producTeam is a high-performance product design studio specializing in command centers, defense platforms, and critical infrastructure systems.',
     sameAs: [
@@ -34,7 +34,7 @@ export function getWebsiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'producTeam',
-    url: 'https://producteam.studio',
+    url: 'https://producteam-portfolio.vercel.app',
     description:
       'producTeam is a product design studio specializing in critical systems design for defense, infrastructure, and enterprise platforms.',
     publisher: {
