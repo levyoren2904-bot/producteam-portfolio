@@ -4,7 +4,7 @@ import { serialize } from 'next-mdx-remote/serialize';
 import { Header, Footer } from '@/components/layout';
 import { CaseHero, CaseContent, CaseGrid } from '@/components/case-study';
 import { CTABanner } from '@/components/sections';
-import { getCaseBySlug, getAllCaseSlugs, getAllCases } from '@/lib/mdx';
+import { getCaseBySlug, getAllCases } from '@/lib/mdx';
 import { StructuredData } from '@/components/StructuredData';
 import { getCaseStudySchema } from '@/lib/structured-data';
 
@@ -12,10 +12,8 @@ interface PageProps {
   params: { slug: string };
 }
 
-export async function generateStaticParams() {
-  const slugs = getAllCaseSlugs();
-  return slugs.map((slug) => ({ slug }));
-}
+// Treat case study pages as dynamic to avoid prerender issues with MDX on Vercel
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const caseStudy = getCaseBySlug(params.slug);
