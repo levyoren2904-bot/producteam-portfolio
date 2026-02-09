@@ -21,8 +21,8 @@ export default function NotFound() {
                 PAGE NOT <span className="text-primary">FOUND</span>
               </h1>
               <p className="mx-auto mt-6 max-w-md text-lg text-text-muted">
-                The page you're looking for doesn't exist or has been moved.
-                Let's get you back on track.
+                The page you&apos;re looking for doesn&apos;t exist or has been moved.
+                Let&apos;s get you back on track.
               </p>
               <div className="mt-10 flex flex-wrap justify-center gap-4">
                 <Button href="/" size="lg">

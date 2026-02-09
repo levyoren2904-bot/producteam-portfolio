@@ -25,12 +25,12 @@ export default function ContactPage() {
                 Get in Touch
               </span>
               <h1 className="max-w-2xl font-display text-display-lg">
-                LET'S BUILD SOMETHING{' '}
+                LET&apos;S BUILD SOMETHING{' '}
                 <span className="text-primary">CRITICAL</span>
               </h1>
               <p className="mt-6 max-w-xl text-lg text-text-muted">
-                Have a project in mind? We'd love to hear about it. Tell us
-                about your challenges and we'll discuss how we can help.
+                Have a project in mind? We&apos;d love to hear about it. Tell us
+                about your challenges and we&apos;ll discuss how we can help.
               </p>
             </div>
 

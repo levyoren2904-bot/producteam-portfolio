@@ -46,8 +46,8 @@ export function Values() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-8 border-l-2 border-primary pl-6 text-xl italic text-text"
             >
-              "The best interface is invisible. The operator should see only the
-              mission, never the tool."
+              &ldquo;The best interface is invisible. The operator should see only the
+              mission, never the tool.&rdquo;
             </motion.blockquote>
           </div>
 
