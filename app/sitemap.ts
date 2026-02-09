@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllCaseSlugs } from '@/lib/mdx';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://vectrix.studio';
+  const baseUrl = 'https://producteam-portfolio.vercel.app';
   
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

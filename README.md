@@ -1,4 +1,4 @@
-# VECTRIX - UX/UI Studio Portfolio
+# producTeam - UX/UI Studio Portfolio
 
 A high-end, visually striking portfolio website for a UX/UI studio specializing in critical systems, defense, infrastructure, and enterprise platforms.
 

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://vectrix.studio/sitemap.xml',
+    sitemap: 'https://producteam-portfolio.vercel.app/sitemap.xml',
   };
 }
