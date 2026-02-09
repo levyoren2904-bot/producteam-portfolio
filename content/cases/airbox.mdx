@@ -1,0 +1,133 @@
+---
+title: "Airbox"
+slug: "airbox"
+client: "Air Force Operations Command"
+industry: "Air Operations"
+year: 2024
+duration: "18 months"
+role:
+  - "Product Strategy"
+  - "UX Architecture"
+  - "Interface Design"
+thumbnail: "/images/airbox/hero.jpg"
+featured: false
+summary: "Airbox is a command-and-control system for real-time operational situational awareness across all Air Force platforms, supporting the management, coordination, and oversight of ongoing missions in a dynamic, data-intensive environment."
+impact:
+  - "Shared air picture across all platforms"
+  - "Faster mission prioritization under pressure"
+  - "Improved confidence in real-time decisions"
+---
+
+## Context
+
+Modern air operations generate an enormous volume of data—tracks, missions, assets, weather, intelligence feeds, and deconfliction constraints—all evolving second by second.
+
+Before Airbox, this information was scattered across multiple tools and screens. Planners, controllers, and mission commanders each saw only part of the picture, relying heavily on voice communication and manual synchronization to maintain situational awareness.
+
+Airbox was created to bring all of this into a single, coherent command-and-control environment that could serve as the operational \"source of truth\" for ongoing missions across the entire Air Force.
+
+## Challenge
+
+The core challenge of Airbox was designing a user experience that could:
+
+- Maintain **continuous control** over a rapidly changing operational picture.
+- Enable **rapid prioritization** as new missions, threats, and constraints emerge.
+- Support **effective decision-making** under operational pressure, where attention and time are both limited.
+
+The interface had to help controllers and commanders move fluidly between high-level awareness and precise tactical action, without ever losing the sense of what matters now.
+
+## Constraints
+
+Several constraints shaped the design of Airbox:
+
+- The system had to support both peacetime training and live operations without feeling like \"two different products\".
+- Different roles—air controllers, mission commanders, planners—needed tailored views while still sharing a single underlying operational picture.
+- The environment is inherently noisy: dozens of simultaneous missions, assets entering and leaving the theater, and constant updates from external systems.
+
+These constraints meant that Airbox could not simply visualize more data; it had to **curate** and **orchestrate** it.
+
+## Strategy
+
+Our strategy for Airbox focused on turning raw operational data into an interpretable, actionable story for decision-makers.
+
+<ProcessStep number="01" title="Mission-Centric Framing">
+We structured the system around missions rather than individual platforms or sensors. This allowed controllers and commanders to see how assets, routes, and constraints align around clear operational objectives.
+</ProcessStep>
+
+<ProcessStep number="02" title="Attention-Guided Layout">
+We designed the main workspace so that the most critical changes pull attention without overwhelming the operator. Visual hierarchy, motion, and color are used sparingly and intentionally to indicate priority, not just activity.
+</ProcessStep>
+
+<ProcessStep number="03" title="Seamless Elevation and Drill-Down">
+Airbox makes it easy to move between the big picture and specific mission or asset details, keeping context persistent. Commanders can zoom out to the entire theater and then dive into a single mission thread without ever feeling \"lost\".
+</ProcessStep>
+
+## Architecture
+
+Airbox is built around three primary interface layers:
+
+**Air Theater Overview**
+
+An operational map that consolidates all active missions, air corridors, restricted areas, and threats. This view is optimized for scanning and prioritization, helping commanders understand where attention is needed now.
+
+**Mission Control Workspace**
+
+Focused layouts for planning and supervising individual missions or mission groups. These views show timelines, objectives, asset assignments, and risk indicators in a way that supports rapid adjustments while preserving operational integrity.
+
+**Asset & Channel Detail**
+
+Deep views for specific platforms, communication channels, or data feeds, used when something requires investigation or intervention. These are tightly integrated into the wider context so operators never lose the connection between a local issue and the global situation.
+
+## Outcomes
+
+Following initial deployment and operational exercises with Airbox:
+
+<CaseStats
+  stats={[
+    { value: "Unified", label: "Air picture across platforms" },
+    { value: "Faster", label: "Mission reprioritization cycles" },
+    { value: "Clearer", label: "Alignment between roles" },
+    { value: "Higher", label: "Confidence in real-time decisions" },
+  ]}
+/>
+
+Controllers and commanders reported that Airbox made it easier to keep track of what mattered without constantly \"chasing\" information across systems. Instead of fighting the tools, they could focus on managing the mission.
+
+## Impact
+
+Airbox showcases producTeam’s ability to design for highly dynamic, data-intensive operational environments.
+
+By centering the experience around missions, attention, and fluid navigation between levels of detail, we helped the Air Force:
+
+- Strengthen shared situational awareness across roles and platforms.
+- Reduce friction in managing complex, overlapping missions.
+- Build a scalable foundation for future automation and decision-support capabilities.
+
+For producTeam, Airbox is a reference project in translating real-time operational complexity into a controlled, human-centered command-and-control experience.
+
+## Interface
+
+<TwoColumn>
+  <div>
+    <h3>Air Theater Overview</h3>
+    <p>
+      The primary Airbox overview fuses missions, air corridors, threats, and
+      restrictions into a single theater picture, making it clear where
+      commanders need to focus now.
+    </p>
+  </div>
+  <ImageGallery
+    images={[
+      {
+        src: "/images/airbox/hero.jpg",
+        alt: "Airbox air theater overview – consolidated air operations map",
+      },
+      {
+        src: "/images/airbox/screen-1.jpg",
+        alt: "Airbox mission control workspace – mission-level supervision",
+      },
+    ]}
+  />
+</TwoColumn>
+
+

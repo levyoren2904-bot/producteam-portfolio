@@ -1,0 +1,131 @@
+---
+title: "Zoharim Command & Control"
+slug: "zoharim-command-and-control"
+client: "Classified Naval Program"
+industry: "Naval Defense"
+year: 2025
+duration: "24 months"
+role:
+  - "Product Strategy"
+  - "UX Architecture"
+  - "Interface Design"
+thumbnail: "/images/zoharim/hero.jpg"
+featured: true
+summary: "Zoharim is a command-and-control system embedded across missile boats, coastal units, and additional naval and aerial platforms, supporting combat management and real-time decision-making as part of day-to-day operational activity."
+impact:
+  - "Unified picture across sea, coastal, and aerial assets"
+  - "Reduced time-to-decision in live-fire scenarios"
+  - "Deployment-ready for classified, air-gapped environments"
+---
+
+## Context
+
+Zoharim was conceived as the next generation of the Navy’s operational backbone—a single command-and-control environment that could live simultaneously on missile boats, coastal units, and additional naval and aerial platforms.
+
+Unlike traditional "headquarters-only" systems, Zoharim needed to be present where decisions are actually made: on the bridge, in coastal batteries, and in airborne platforms supporting the same mission. The system had to support combat management and real-time decision-making while feeling like a native part of day-to-day operational activity rather than an external tool.
+
+## Challenge
+
+Designing for Zoharim meant dealing with three layers of complexity:
+
+- **Multi-platform reality** – The same operational picture had to adapt to very different hardware setups, physical environments, and crew roles on ships, coastal units, and aerial assets.
+- **Continuous operations** – The system is used both in routine patrols and in high-intensity engagements; the interface cannot "switch modes" in ways that confuse operators.
+- **Classified environment** – Access to users, scenarios, and real data was strictly limited, which meant we had to design and validate with incomplete information while still guaranteeing operational safety.
+
+The main challenge was not just building an elegant interface, but creating a system that operators could trust when it mattered most—despite the fact that we could rarely observe them directly in real conditions.
+
+## Constraints
+
+Working in a classified environment shaped every step of the project:
+
+- Interviews, testing, and on-site observations were tightly controlled and time-boxed.
+- Many real scenarios, threat models, and ROEs (rules of engagement) could not be fully disclosed.
+- Hardware was fixed and ruggedized; we had to design around existing screens, input devices, and physical console layouts.
+- All work had to be done within air-gapped networks, with strict limitations on tools, exports, and documentation.
+
+These constraints required meticulous planning, rigorous documentation, and a design process that could withstand scrutiny from security, engineering, and operations simultaneously.
+
+## Strategy
+
+Our approach to Zoharim combined systems thinking with a very pragmatic view of operator reality.
+
+<ProcessStep number="01" title="Operational Model First">
+Before drawing screens, we mapped Zoharim as a system of decisions rather than a system of pages—what decisions need to be made on each platform, in what order, and under what time pressure.
+</ProcessStep>
+
+<ProcessStep number="02" title="Progressive Confidence Building">
+Because we could not test every scenario with real data, we invested heavily in intermediate validation: tabletop simulations with commanders, red-team reviews, and structured design walkthroughs with domain experts.
+</ProcessStep>
+
+<ProcessStep number="03" title="Interface as a Shared Language">
+We treated the UI as a shared language between platforms. Visual patterns, terminology, and interaction models were aligned so that crews moving between missile boats, coastal units, and aerial assets would never have to "re-learn" the system.
+</ProcessStep>
+
+## Architecture
+
+Zoharim is structured around three core views that exist across all platforms but are tuned to each environment:
+
+**Mission Overview**
+
+A consolidated operational picture that brings together tracks, missions, and engagements across sea, coast, and air. This view is optimized for rapid scanning and prioritization rather than detailed analysis.
+
+**Engagement Workspace**
+
+Task-focused layouts for managing specific engagements—launch windows, rules of engagement, targeting, and deconfliction. The layout is designed to maintain context while allowing different roles to work in parallel.
+
+**Platform Perspective**
+
+Views that bring the system "down" to the local platform: what this specific vessel, battery, or aircraft sees and controls, and how its current status affects the wider operation.
+
+Across all three, we designed interaction patterns that keep attention anchored on what matters now, while still exposing the reasoning behind recommendations and system states.
+
+## Interface
+
+<TwoColumn>
+  <div>
+    <h3>Mission Overview – Fleet-Level Picture</h3>
+    <p>
+      The main Zoharim overview consolidates missions, tracks, and engagements
+      across sea, coast, and air into a single tactical picture operators can
+      trust under pressure.
+    </p>
+  </div>
+  <ImageGallery
+    images={[
+      {
+        src: "/images/zoharim/hero.jpg",
+        alt: "Zoharim mission overview – consolidated operational picture",
+      },
+      {
+        src: "/images/zoharim/screen-1.jpg",
+        alt: "Zoharim engagement workspace – detailed mission control view",
+      },
+    ]}
+  />
+</TwoColumn>
+
+## Outcomes
+
+While many of the deployment details are classified, internal evaluations and training exercises highlighted several concrete outcomes:
+
+<CaseStats
+  stats={[
+    { value: "Shared", label: "Operational picture across platforms" },
+    { value: "Faster", label: "Target evaluation and handoff" },
+    { value: "Integrated", label: "Into daily operational routines" },
+    { value: "Validated", label: "Under strict security constraints" },
+  ]}
+/>
+
+The most important result is not a single KPI, but the fact that operators reported that Zoharim "feels like part of the ship"—a tool that fits the way they already think and work, instead of forcing them into a new mental model.
+
+## Impact
+
+Zoharim demonstrates how product design can operate effectively inside heavily constrained, classified environments. By combining systems thinking, careful planning, and disciplined validation, producTeam was able to deliver a system that:
+
+- Aligns naval, coastal, and aerial units around a single operational truth.
+- Reduces friction in day-to-day workflows as well as during high-intensity engagements.
+- Creates a robust foundation for future capabilities without locking the Navy into a fragile UI.
+
+For producTeam, Zoharim is a flagship example of our ability to work where stakes are high, information is limited, and failure is not an option.
+

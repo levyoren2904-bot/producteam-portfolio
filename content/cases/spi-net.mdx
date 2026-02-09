@@ -1,0 +1,136 @@
+---
+title: "SPI-NET"
+slug: "spi-net"
+client: "Classified Communications Division"
+industry: "Operational Networks"
+year: 2024
+duration: "16 months"
+role:
+  - "Product Strategy"
+  - "UX Architecture"
+  - "Interface Design"
+thumbnail: "/images/spi-net/hero.jpg"
+featured: false
+summary: "SPI-NET is a monitoring and control system for operational and engineering communication networks, enabling remote management and operation of multiple networks in parallel across development and live environments."
+impact:
+  - "Unified control across heterogeneous networks"
+  - "Improved visibility into critical communication infrastructure"
+  - "Reduced operational overhead for network teams"
+---
+
+## Context
+
+SPI-NET was designed for an organization running several parallel communication networks—operational, engineering, and testing—each with its own topology, tools, and operating culture.
+
+Historically, every network had its own dedicated consoles and processes. Engineers monitored one set of tools, operations teams another, and cross-network issues were resolved through emails and phone calls rather than a shared system of record.
+
+As the number of networks and services grew, this fragmentation became a real risk: incidents were harder to correlate, ownership was unclear, and monitoring gaps appeared exactly where reliability mattered most.
+
+## Challenge
+
+The project’s main challenge was designing a **unified control experience** for an organization that:
+
+- Operates across multiple networks, each with different criticality levels and lifecycles.
+- Needs to support both day-to-day engineering work and 24/7 operational readiness.
+- Cannot afford downtimes or blind spots in its communication infrastructure.
+
+We needed an interface that could bring all networks into a single monitoring surface without flattening their differences—or overwhelming operators with noise.
+
+## Constraints
+
+Several practical and organizational constraints shaped the design:
+
+- Existing NMS and monitoring tools could not be replaced; SPI-NET had to orchestrate and aggregate rather than rebuild from scratch.
+- Different teams used different mental models—engineers thought in terms of services and components, while operations cared about availability, SLA impact, and incident timelines.
+- Networks spanned both development and operational environments, each with different expectations for stability and change velocity.
+
+These constraints meant SPI-NET had to act as a translation layer: preserving the richness of each domain while offering a coherent, shared view.
+
+## Strategy
+
+Our strategy for SPI-NET centered on three pillars:
+
+<ProcessStep number="01" title="Network-Agnostic Information Architecture">
+We separated the core information architecture from any specific network implementation. This allowed us to model networks as reusable primitives—topology, health, incidents, maintenance windows—regardless of their underlying technology.
+</ProcessStep>
+
+<ProcessStep number="02" title="Role-Aware Workflows">
+We mapped the distinct needs of engineering and operations roles and designed entry points for each: engineers land in service-centric diagnostics views, while operations begin with high-level availability dashboards and incident queues.
+</ProcessStep>
+
+<ProcessStep number="03" title="Progressive Drill-Down">
+Instead of forcing users to choose between \"high level\" and \"deep technical\" views, SPI-NET lets them start from a stable overview and drill down only when necessary, keeping context visible at every step.
+</ProcessStep>
+
+## Architecture
+
+SPI-NET’s interface is organized into four primary layers:
+
+**Global Overview**
+
+A cross-network health dashboard showing the status of all monitored environments—production, staging, and engineering networks. This view highlights where attention is needed rather than mirroring every metric.
+
+**Network Workspaces**
+
+Dedicated workspaces for each network, showing topology, key services, and current incidents. Operators can switch between networks without losing their mental model of how each one behaves.
+
+**Incident & Event Timeline**
+
+An integrated timeline that correlates alerts, changes, and incidents across networks. This helps teams understand whether an issue is isolated or part of a broader pattern.
+
+**Deep Diagnostics**
+
+Service- and component-level views that expose logs, metrics, and dependency maps. These are tuned for engineering work but remain accessible from operations views with clear handoff patterns.
+
+## Outcomes
+
+After SPI-NET’s rollout across the organization’s communication networks:
+
+<CaseStats
+  stats={[
+    { value: "Unified", label: "Control surface across networks" },
+    { value: "Better", label: "Correlation of cross-network incidents" },
+    { value: "Lower", label: "Cognitive load on on-call engineers" },
+    { value: "Improved", label: "Visibility into critical infrastructure" },
+  ]}
+/>
+
+Teams reported that they could finally discuss issues using the same map of reality, rather than screenshots from different tools. On-call rotations became more predictable, and incident reviews focused on improving the system—not arguing about whose dashboard was \"right\".
+
+## Impact
+
+SPI-NET demonstrates producTeam’s ability to design for complex, multi-network environments where reliability and clarity are non-negotiable.
+
+By unifying fragmented tools into a coherent product experience, we helped the organization:
+
+- Reduce time spent reconciling conflicting monitoring views.
+- Improve confidence in the stability and availability of critical communication networks.
+- Create a scalable foundation for future observability and automation initiatives.
+
+For producTeam, SPI-NET is a showcase of how product design can turn operational complexity into a manageable, human-centered system.
+
+## Interface
+
+<TwoColumn>
+  <div>
+    <h3>Cross-Network Health Overview</h3>
+    <p>
+      The SPI-NET overview brings operational, engineering, and testing
+      networks into a single health surface, highlighting where attention is
+      needed without mirroring every metric.
+    </p>
+  </div>
+  <ImageGallery
+    images={[
+      {
+        src: "/images/spi-net/hero.jpg",
+        alt: "SPI-NET global overview – cross-network health dashboard",
+      },
+      {
+        src: "/images/spi-net/screen-1.jpg",
+        alt: "SPI-NET incident and event timeline – cross-network correlation",
+      },
+    ]}
+  />
+</TwoColumn>
+

@@ -1,0 +1,160 @@
+---
+title: "Blue Wolf"
+slug: "blue-wolf"
+client: "Intelligence Operations Division"
+industry: "Intelligence & Force Deployment"
+year: 2023
+duration: "20 months"
+role:
+  - "Product Strategy"
+  - "UX Architecture"
+  - "Interface Design"
+thumbnail: "/images/blue wolf/desktop-1.jpg"
+featured: false
+summary: "Blue Wolf is an operational command-and-control system for planning, deploying, and managing forces for intelligence missions, supporting real-time resource allocation, readiness analysis, and coordination between operational units."
+impact:
+  - "Clear view of force readiness and availability"
+  - "Better alignment between missions and resources"
+  - "Faster, more confident deployment decisions"
+---
+
+## Context
+
+Intelligence operations depend on having the right people, capabilities, and assets in the right place at the right time—often with incomplete or rapidly changing information.
+
+Before Blue Wolf, planning and deploying forces for intelligence missions involved a mixture of spreadsheets, legacy tools, and informal communication channels. Commanders had to mentally reconcile unit readiness, location, skills, and mission requirements, often under tight time constraints.
+
+Blue Wolf was designed to centralize this process into a single operational system—one place to understand who is available, what capabilities they bring, and how deployment decisions impact the wider operational picture.
+
+## Challenge
+
+The project required designing an interface that enables **precise decision-making under uncertainty**, balancing:
+
+- **Risk** – What is the operational and intelligence risk of deploying or holding back a given unit?
+- **Availability** – Which forces are actually ready, where are they, and what other commitments do they have?
+- **Mission objectives** – How does each deployment decision contribute to or constrain current and planned missions?
+
+The system needed to allow commanders to reason about multiple missions, timeframes, and contingencies without losing situational clarity.
+
+## Constraints
+
+Blue Wolf operated within several constraints:
+
+- Information about missions, units, and capabilities is often sensitive or compartmentalized; not every user can see the full picture.
+- Availability and readiness data comes from multiple systems that update at different cadences and levels of reliability.
+- Deployment decisions frequently involve trade-offs—supporting one mission may degrade readiness for another.
+
+These constraints meant that Blue Wolf had to be explicit about **what is known, what is assumed, and what is at risk**.
+
+## Strategy
+
+Our strategy for Blue Wolf focused on turning complex force-management decisions into a structured, explainable process.
+
+<ProcessStep number="01" title="Mission-Resource Mapping">
+We modeled missions and resources as first-class objects, making the relationship between objectives, required capabilities, and available units fully explicit in the interface.
+</ProcessStep>
+
+<ProcessStep number="02" title="Readiness as a Primary Signal">
+Readiness and availability were elevated to primary signals in the UI, not secondary attributes—ensuring that every deployment decision is framed in terms of its impact on overall readiness.
+</ProcessStep>
+
+<ProcessStep number="03" title="Decision Support, Not Automation">
+Blue Wolf surfaces trade-offs, conflicts, and potential gaps, but leaves the final judgment to commanders. The interface is designed to explain why a recommendation or warning exists, not to make opaque \"black-box\" suggestions.
+</ProcessStep>
+
+## Architecture
+
+Blue Wolf’s interface is structured across four core views:
+
+**Mission Planning Board**
+
+A workspace for defining and adjusting intelligence missions, including objectives, timeframes, required capabilities, and priority. This board shows which missions are fully staffed, partially covered, or at risk.
+
+**Force Readiness Overview**
+
+An at-a-glance view of units, teams, and key capabilities—their readiness state, current location, and upcoming commitments. This view is optimized for understanding the global impact of deployment decisions.
+
+**Assignment & Simulation Workspace**
+
+Interactive tools for assigning units to missions, running \"what-if\" scenarios, and seeing how changes affect both individual missions and overall readiness. Conflicts and gaps are surfaced immediately.
+
+**Operational Timeline**
+
+A temporal view of missions, deployments, and recovery periods, helping planners ensure that today’s decisions do not compromise tomorrow’s operations.
+
+## Outcomes
+
+After Blue Wolf’s adoption within the Intelligence Operations Division:
+
+<CaseStats
+  stats={[
+    { value: "Higher", label: "Transparency into readiness and commitments" },
+    { value: "Better", label: "Match between missions and capabilities" },
+    { value: "Reduced", label: "Last-minute reshuffles and conflicts" },
+    { value: "Improved", label: "Confidence in high-risk deployment decisions" },
+  ]}
+/>
+
+Commanders and planners reported that deployment discussions moved from opinion-driven debates to structured conversations anchored in a shared view of missions and resources.
+
+## Impact
+
+Blue Wolf is a clear example of how producTeam designs for **decision-making under uncertainty**.
+
+By making readiness, risk, and mission objectives visible and connected, the system helps organizations:
+
+- Reduce the cognitive burden of complex force-management decisions.
+- Avoid hidden conflicts and unintended readiness gaps.
+- Build a more resilient, explainable deployment process that scales with operational demand.
+
+For producTeam, Blue Wolf reinforces our ability to design command-and-control products that sit at the intersection of intelligence, operations, and human judgment.
+
+## Interface
+
+<TwoColumn>
+  <div>
+    <h3>Desktop Planning & Readiness</h3>
+    <p>
+      Desktop workspaces give commanders a structured view of missions,
+      readiness, and commitments, making it easier to see where resources are
+      overextended or underutilized.
+    </p>
+  </div>
+  <ImageGallery
+    images={[
+      {
+        src: "/images/blue wolf/desktop-1.jpg",
+        alt: "Blue Wolf mission planning board – desktop view",
+      },
+      {
+        src: "/images/blue wolf/desktop-2.jpg",
+        alt: "Blue Wolf force readiness overview – desktop view",
+      },
+    ]}
+  />
+</TwoColumn>
+
+<TwoColumn reverse>
+  <div>
+    <h3>Mobile Field View</h3>
+    <p>
+      Mobile views support officers in the field with lightweight access to
+      mission assignments, readiness changes, and deployment updates in real
+      time.
+    </p>
+  </div>
+  <ImageGallery
+    images={[
+      {
+        src: "/images/blue wolf/mobile-1.jpg",
+        alt: "Blue Wolf mission summary – mobile view",
+      },
+      {
+        src: "/images/blue wolf/mobile-2.jpg",
+        alt: "Blue Wolf deployment details – mobile view",
+      },
+    ]}
+  />
+</TwoColumn>
+
+

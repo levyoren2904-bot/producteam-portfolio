@@ -1,0 +1,156 @@
+---
+title: "SOL"
+slug: "sol"
+client: "Population Administration Operations"
+industry: "Civil Operations"
+year: 2023
+duration: "14 months"
+role:
+  - "Product Strategy"
+  - "UX Architecture"
+  - "Interface Design"
+thumbnail: "/images/sol/desktop-1.jpg"
+featured: false
+summary: "SOL is a centralized command-and-control system for managing and presenting a comprehensive operational overview of Population Administration activities in Judea and Samaria and Gaza."
+impact:
+  - "Single operational overview across regions"
+  - "Clear separation between alerts and status"
+  - "Faster identification of items requiring immediate action"
+---
+
+## Context
+
+The Population Administration operates in one of the most complex civil-operational environments in the world—Judea and Samaria and Gaza—where every decision is constrained by legal, political, humanitarian, and security considerations.
+
+Before SOL, information about permits, movements, approvals, and exceptions was spread across multiple systems and local tools. Command and control teams had to manually assemble an operational picture from partial data, phone calls, and spreadsheets.
+
+SOL was created to centralize this reality into a single operational overview that could support day-to-day management as well as exceptional events.
+
+## Challenge
+
+The core challenge of SOL was designing a command-and-control interface that:
+
+- Presents a **comprehensive operational overview** without overwhelming the operator.
+- Makes a **clear distinction** between information that requires immediate action and information that is purely contextual.
+- Respects the sensitivity of the domain—where every action can have human, political, and security implications.
+
+We needed a system that would allow operators to understand, at a glance, what is stable, what is changing, and what demands intervention right now.
+
+## Constraints
+
+Several constraints defined the design space:
+
+- The system covers **multiple geographic regions** with different policies, actors, and operational patterns.
+- Operators have limited time and attention; the interface must work under constant multitasking and interruptions.
+- Many flows are governed by strict legal and procedural rules; the UI must make these constraints visible without becoming bureaucratic noise.
+
+These constraints made information hierarchy and prioritization the central design problem.
+
+## Strategy
+
+Our strategy for SOL focused on building a visual and interaction language that encodes priority and depth directly into the interface.
+
+<ProcessStep number="01" title="Explicit Information Hierarchy">
+We defined clear layers of information—from top-level indicators down to record-level details—and mapped which user roles need which layers to make which decisions.
+</ProcessStep>
+
+<ProcessStep number="02" title="Action vs. Status Separation">
+We created distinct visual and spatial patterns for items requiring action versus status-only information, so operators could immediately differentiate \"needs me\" from \"good to know\".
+</ProcessStep>
+
+<ProcessStep number="03" title="Progressive Detail Reveal">
+SOL keeps the main overview stable while allowing operators to drill into specific populations, regions, or cases only when needed, preserving context and preventing cognitive overload.
+</ProcessStep>
+
+## Architecture
+
+SOL’s interface is organized into three main layers:
+
+**Operational Overview**
+
+A consolidated view of Population Administration activities across Judea and Samaria and Gaza, highlighting key indicators, exceptions, and capacity limits. This is the primary screen operators live in throughout the day.
+
+**Regional & Domain Views**
+
+Focused views for specific regions or activity types (e.g., permits, crossings, special cases). These views let operators understand trends and issues within a constrained slice of the system without losing the connection to the global picture.
+
+**Case-Level Insight**
+
+Detailed records and timelines for individual items when deeper investigation is required. These views clarify history, dependencies, and constraints without duplicating information from other systems.
+
+## Outcomes
+
+After the introduction of SOL into Population Administration operations:
+
+<CaseStats
+  stats={[
+    { value: "Unified", label: "Operational overview across regions" },
+    { value: "Clear", label: "Distinction between action and status items" },
+    { value: "Faster", label: "Identification of critical cases" },
+    { value: "Reduced", label: "Noise in daily decision-making" },
+  ]}
+/>
+
+Operators reported that SOL made it significantly easier to understand where attention was required, and where the system was simply informing them about ongoing, stable activity.
+
+## Impact
+
+SOL demonstrates producTeam’s ability to design command-and-control systems in highly constrained civil-operational environments.
+
+By making information hierarchy explicit and visually encoded, we helped the organization:
+
+- Reduce time spent scanning low-priority information.
+- Improve confidence that critical items will not be missed.
+- Create a scalable framework for future policies, regions, and activity types.
+
+For producTeam, SOL is a key example of how design can bring clarity and control to sensitive, multi-layered operational domains.
+
+## Interface
+
+<TwoColumn>
+  <div>
+    <h3>Desktop Operational Overview</h3>
+    <p>
+      Desktop layouts are optimized for operators managing multiple regions in
+      parallel, with a stable overview and immediate visibility into items
+      that require action versus those that are purely status.
+    </p>
+  </div>
+  <ImageGallery
+    images={[
+      {
+        src: "/images/sol/desktop-1.jpg",
+        alt: "SOL operational overview – desktop view across regions",
+      },
+      {
+        src: "/images/sol/desktop-2.jpg",
+        alt: "SOL regional and case-level details – desktop view",
+      },
+    ]}
+  />
+</TwoColumn>
+
+<TwoColumn reverse>
+  <div>
+    <h3>Mobile Monitoring</h3>
+    <p>
+      Mobile views support supervisors in the field, surfacing only the items
+      that truly need intervention while keeping the broader operational
+      context in the background.
+    </p>
+  </div>
+  <ImageGallery
+    images={[
+      {
+        src: "/images/sol/mobile-1.jpg",
+        alt: "SOL high-priority items – mobile view",
+      },
+      {
+        src: "/images/sol/mobile-2.jpg",
+        alt: "SOL case details – mobile view",
+      },
+    ]}
+  />
+</TwoColumn>
+
+
