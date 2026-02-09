@@ -9,7 +9,7 @@ import { CaseStats } from './CaseStats';
 // Custom components for MDX rendering
 export const mdxComponents = {
   // Headings
-  h1: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
+  h1: ({ children, ...props }: any) => (
     <motion.h1
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ export const mdxComponents = {
     </motion.h1>
   ),
 
-  h2: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
+  h2: ({ children, ...props }: any) => (
     <motion.h2
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ export const mdxComponents = {
     </motion.h2>
   ),
 
-  h3: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
+  h3: ({ children, ...props }: any) => (
     <motion.h3
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ export const mdxComponents = {
   ),
 
   // Paragraphs
-  p: ({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
+  p: ({ children, ...props }: any) => (
     <motion.p
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -83,7 +83,7 @@ export const mdxComponents = {
   ),
 
   // Blockquote
-  blockquote: ({ children, ...props }: React.HTMLAttributes<HTMLQuoteElement>) => (
+  blockquote: ({ children, ...props }: any) => (
     <motion.blockquote
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
