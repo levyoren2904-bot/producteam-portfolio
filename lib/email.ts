@@ -75,7 +75,7 @@ export async function sendContactEmail(data: ContactFormData) {
     const result = await resend.emails.send({
       from: 'Portfolio Contact <onboarding@resend.dev>',
       to: process.env.CONTACT_EMAIL || 'hello@example.com',
-      replyTo: email,
+      reply_to: email,
       subject: `New Project Inquiry from ${name}${company ? ` at ${company}` : ''}`,
       html: htmlContent,
     });
