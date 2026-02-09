@@ -73,6 +73,9 @@ export default function RootLayout({
       <head>
         <StructuredData data={getOrganizationSchema()} />
         <StructuredData data={getWebsiteSchema()} />
+        {/* Additional OG tags for WhatsApp compatibility */}
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:secure_url" content="https://producteam-portfolio.vercel.app/og-image.png" />
       </head>
       <body className="bg-background text-text antialiased">
         {children}
