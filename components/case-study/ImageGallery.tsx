@@ -20,7 +20,7 @@ export function ImageGallery({ images }: ImageGalleryProps) {
 
   return (
     <>
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className={cn("grid gap-4", images.length > 1 && "md:grid-cols-2")}>
         {images.map((image, index) => (
           <motion.div
             key={image.src}
