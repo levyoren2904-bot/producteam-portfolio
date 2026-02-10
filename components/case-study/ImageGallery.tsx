@@ -39,12 +39,7 @@ export function ImageGallery({ images }: ImageGalleryProps) {
           >
             <button
               onClick={() => setSelectedImage(index)}
-              className={cn(
-                "block w-full",
-                image.src?.includes("Israel's Public Diplomacy") 
-                  ? "aspect-[16/12]" 
-                  : "aspect-video"
-              )}
+              className="block w-full aspect-video"
             >
               <div className="relative h-full w-full">
                 {image.src ? (
@@ -111,22 +106,37 @@ export function ImageGallery({ images }: ImageGalleryProps) {
               className="relative max-h-[90vh] max-w-[90vw]"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative aspect-video w-[80vw] max-w-5xl overflow-hidden rounded-lg border border-border">
-                {images[selectedImage].src ? (
+              {images[selectedImage].src &&
+              images[selectedImage].src.includes("Israel’s Public Diplomacy") ? (
+                // Tall website screens – scroll inside lightbox to see full page
+                <div className="relative w-[80vw] max-w-5xl max-h-[90vh] overflow-y-auto rounded-lg border border-border bg-surface">
                   <Image
                     src={images[selectedImage].src}
                     alt={images[selectedImage].alt}
-                    fill
-                    className="object-contain"
+                    width={1920}
+                    height={3000}
+                    className="w-full h-auto object-contain"
                   />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-surface">
-                    <div className="h-48 w-80 rounded border border-border/50 bg-background">
-                      <div className="h-full w-full bg-grid-overlay opacity-50" />
+                </div>
+              ) : (
+                // Default behavior for all other projects
+                <div className="relative aspect-video w-[80vw] max-w-5xl overflow-hidden rounded-lg border border-border">
+                  {images[selectedImage].src ? (
+                    <Image
+                      src={images[selectedImage].src}
+                      alt={images[selectedImage].alt}
+                      fill
+                      className="object-contain"
+                    />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center bg-surface">
+                      <div className="h-48 w-80 rounded border border-border/50 bg-background">
+                        <div className="h-full w-full bg-grid-overlay opacity-50" />
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
+                  )}
+                </div>
+              )}
 
               {images[selectedImage].caption && (
                 <p className="mt-4 text-center text-text-muted">
