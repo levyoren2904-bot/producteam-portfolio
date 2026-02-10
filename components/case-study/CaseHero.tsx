@@ -140,12 +140,11 @@ export function CaseHero({ frontmatter }: CaseHeroProps) {
         className="relative"
       >
         <Container size="wide">
-          <div className={cn(
-            "relative overflow-hidden rounded-t-xl border border-b-0 border-border bg-surface-elevated",
-            frontmatter.slug === 'israels-public-diplomacy-website' 
-              ? "aspect-hero-tall" 
-              : "aspect-[21/9]"
-          )}>
+          <div
+            className={cn(
+              'relative aspect-[21/9] overflow-hidden rounded-t-xl border border-b-0 border-border bg-surface-elevated'
+            )}
+          >
             {thumbnail ? (
               <Image
                 src={thumbnail}
