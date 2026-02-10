@@ -34,11 +34,9 @@ export function ContactInfo() {
       <div>
         <h3 className="mb-4 font-display text-lg">Office</h3>
         <address className="not-italic text-text-muted">
-          1234 Design District
+          Ha&apos;arava St 1
           <br />
-          Suite 500
-          <br />
-          San Francisco, CA 94102
+          Giv&apos;at Shmuel
         </address>
       </div>
 

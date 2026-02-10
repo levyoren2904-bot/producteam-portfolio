@@ -56,7 +56,7 @@ export function StudioHero() {
             className="mt-12 grid gap-8 border-t border-border pt-12 sm:grid-cols-3"
           >
             <div>
-              <div className="font-display text-4xl text-primary">15+</div>
+              <div className="font-display text-4xl text-primary">5+</div>
               <div className="mt-1 text-text-muted">
                 Years designing critical interfaces
               </div>
