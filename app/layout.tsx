@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       'High-performance product design and UX studio for command centers, defense platforms, and complex enterprise systems.',
     images: [
       {
-        url: 'https://producteam-portfolio.vercel.app/og-image-v3.jpg',
+        url: 'https://producteam-portfolio.vercel.app/og-image-v4.jpg',
         width: 1200,
         height: 630,
         alt: 'systemic - Product Design for Critical Systems',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: 'systemic | Product Design & UX for Critical Systems',
     description:
       'systemic designs mission-critical UX/UI and digital products that improve decision-making and business performance.',
-    images: ['https://producteam-portfolio.vercel.app/og-image-v3.jpg'],
+    images: ['https://producteam-portfolio.vercel.app/og-image-v4.jpg'],
   },
   robots: {
     index: true,
@@ -77,9 +77,10 @@ export default function RootLayout({
         <meta property="og:image:type" content="image/jpeg" />
         <meta
           property="og:image:secure_url"
-          content="https://producteam-portfolio.vercel.app/og-image-v3.jpg"
+          content="https://producteam-portfolio.vercel.app/og-image-v4.jpg"
         />
-        {/* Check if OG image was updated - user mentioned they replaced it */}
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </head>
       <body className="bg-background text-text antialiased">
         {children}
