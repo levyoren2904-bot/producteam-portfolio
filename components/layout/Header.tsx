@@ -47,7 +47,7 @@ export function Header() {
             {/* Logo */}
             <Link
               href="/"
-              className="group relative z-50 flex items-center gap-2"
+              className="group relative z-50 flex items-center gap-1"
               aria-label="systemic home"
             >
               <Image
@@ -58,7 +58,7 @@ export function Header() {
                 priority
                 className="h-16 w-auto"
               />
-              <span className="text-xs text-text-muted">by Energy Team</span>
+              <span className="text-[10px] text-text-muted/60">by Energy Team</span>
             </Link>
 
             {/* Desktop Navigation */}
