@@ -53,10 +53,10 @@ export function Header() {
               <Image
                 src="/systemic-logo.svg"
                 alt="systemic"
-                width={140}
-                height={40}
+                width={180}
+                height={50}
                 priority
-                className="h-9 w-auto"
+                className="h-12 w-auto"
               />
               <span className="text-xs text-text-muted">by Energy Team</span>
             </Link>
