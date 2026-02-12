@@ -21,7 +21,7 @@ export function StudioHero() {
           >
             <span className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-primary">
               <span className="h-px w-8 bg-primary" />
-              About producTeam
+              About systemic
             </span>
           </motion.div>
 
@@ -40,7 +40,7 @@ export function StudioHero() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="mt-8 max-w-2xl text-xl text-text-muted"
           >
-            producTeam is a high-performance product design studio focused on
+            systemic is a high-performance product design studio focused on
             UX, UI, and complex systems. We help organizations turn critical,
             high-stakes challenges into clear, scalable digital products by
             combining deep UX strategy, modern visual design, and systems

@@ -6,11 +6,11 @@ import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'producTeam | Product Design & UX for Critical Systems',
-    template: '%s | producTeam',
+    default: 'systemic | Product Design & UX for Critical Systems',
+    template: '%s | systemic',
   },
   description:
-    'producTeam is a high-performance product design studio specializing in UX/UI for defense, critical systems, and complex digital platforms.',
+    'systemic is a high-performance product design studio specializing in UX/UI for defense, critical systems, and complex digital platforms.',
   keywords: [
     'Product Design',
     'UX',
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     'Product Design for Critical Systems',
     'UX UI for Defense',
   ],
-  authors: [{ name: 'producTeam' }],
-  creator: 'producTeam',
+  authors: [{ name: 'systemic' }],
+  creator: 'systemic',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://producteam-portfolio.vercel.app',
-    siteName: 'producTeam',
-    title: 'producTeam | Product Design & UX for Critical Systems',
+    siteName: 'systemic',
+    title: 'systemic | Product Design & UX for Critical Systems',
     description:
       'High-performance product design and UX studio for command centers, defense platforms, and complex enterprise systems.',
     images: [
@@ -39,15 +39,15 @@ export const metadata: Metadata = {
         url: 'https://producteam-portfolio.vercel.app/og-image-v3.jpg',
         width: 1200,
         height: 630,
-        alt: 'producTeam - Product Design for Critical Systems',
+        alt: 'systemic - Product Design for Critical Systems',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'producTeam | Product Design & UX for Critical Systems',
+    title: 'systemic | Product Design & UX for Critical Systems',
     description:
-      'producTeam designs mission-critical UX/UI and digital products that improve decision-making and business performance.',
+      'systemic designs mission-critical UX/UI and digital products that improve decision-making and business performance.',
     images: ['https://producteam-portfolio.vercel.app/og-image-v3.jpg'],
   },
   robots: {
@@ -79,6 +79,7 @@ export default function RootLayout({
           property="og:image:secure_url"
           content="https://producteam-portfolio.vercel.app/og-image-v3.jpg"
         />
+        {/* Check if OG image was updated - user mentioned they replaced it */}
       </head>
       <body className="bg-background text-text antialiased">
         {children}

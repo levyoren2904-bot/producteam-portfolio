@@ -47,17 +47,18 @@ export function Header() {
             {/* Logo */}
             <Link
               href="/"
-              className="group relative z-50 flex items-center"
-              aria-label="producTeam home"
+              className="group relative z-50 flex items-center gap-2"
+              aria-label="systemic home"
             >
               <Image
-                src="/producTeam-logo.svg"
-                alt="producTeam"
+                src="/systemic-logo.svg"
+                alt="systemic"
                 width={140}
                 height={40}
                 priority
                 className="h-9 w-auto"
               />
+              <span className="text-xs text-text-muted">by Energy Team</span>
             </Link>
 
             {/* Desktop Navigation */}

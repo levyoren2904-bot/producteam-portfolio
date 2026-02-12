@@ -4,7 +4,7 @@ import { Header, Footer, Container } from '@/components/layout';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'Privacy Policy for producTeam - Learn how we collect, use, and protect your personal information.',
+    'Privacy Policy for systemic - Learn how we collect, use, and protect your personal information.',
 };
 
 export default function PrivacyPage() {
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
 
             <div className="prose-custom prose prose-invert max-w-3xl pb-20">
               <p className="text-lg text-text-muted">
-                This Privacy Policy explains how producTeam (&quot;we&quot;,
+                This Privacy Policy explains how systemic (&quot;we&quot;,
                 &quot;us&quot;, &quot;our&quot;) collects, uses, and protects
                 your personal information when you visit our website{' '}
                 <a href="https://producteam-portfolio.vercel.app/">
@@ -159,7 +159,7 @@ export default function PrivacyPage() {
                 contact:
               </p>
               <p>
-                <strong>producTeam</strong>
+                <strong>systemic</strong>
                 <br />
                 Email:{' '}
                 <a href="mailto:reuvens@energyteam.co.il">

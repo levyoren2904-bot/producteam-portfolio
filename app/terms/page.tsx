@@ -4,7 +4,7 @@ import { Header, Footer, Container } from '@/components/layout';
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description:
-    'Terms of Service for producTeam - Learn about the terms and conditions for using our website.',
+    'Terms of Service for systemic - Learn about the terms and conditions for using our website.',
 };
 
 export default function TermsPage() {
@@ -32,7 +32,7 @@ export default function TermsPage() {
 
             <div className="prose-custom prose prose-invert max-w-3xl pb-20">
               <p className="text-lg text-text-muted">
-                Welcome to producTeam (&quot;we&quot;, &quot;us&quot;,
+                Welcome to systemic (&quot;we&quot;, &quot;us&quot;,
                 &quot;our&quot;). By accessing and using our website{' '}
                 <a href="https://producteam-portfolio.vercel.app">
                   https://producteam-portfolio.vercel.app
@@ -71,7 +71,7 @@ export default function TermsPage() {
                 <li>Logos</li>
               </ul>
               <p>
-                is the property of producTeam or its licensors and is protected
+                is the property of systemic or its licensors and is protected
                 by intellectual property laws. You may not use, reproduce, or
                 distribute any content without prior written consent.
               </p>
@@ -104,7 +104,7 @@ export default function TermsPage() {
 
               <h2>5. Limitation of Liability</h2>
               <p>
-                To the fullest extent permitted by law, producTeam shall not be
+                To the fullest extent permitted by law, systemic shall not be
                 liable for any direct, indirect, incidental, or consequential
                 damages arising from:
               </p>
@@ -126,7 +126,7 @@ export default function TermsPage() {
               <h2>7. Client Engagement</h2>
               <p>
                 Communication through this Site does not constitute a binding
-                agreement. Any professional services provided by producTeam are
+                agreement. Any professional services provided by systemic are
                 subject to separate written agreements.
               </p>
 
@@ -156,7 +156,7 @@ export default function TermsPage() {
                 If you have any questions regarding these Terms, please contact:
               </p>
               <p>
-                <strong>producTeam</strong>
+                <strong>systemic</strong>
                 <br />
                 Email:{' '}
                 <a href="mailto:reuvens@energyteam.co.il">

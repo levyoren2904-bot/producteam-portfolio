@@ -29,7 +29,7 @@ export function Footer() {
               href="/"
               className="font-display text-3xl tracking-tight text-text"
             >
-              producTeam
+              systemic
             </Link>
             <p className="mt-4 max-w-md text-text-muted">
               A high-performance product design studio that helps organizations
@@ -85,7 +85,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
           <p className="text-sm text-text-subtle">
-            © {currentYear} producTeam. All rights reserved.
+            © {currentYear} systemic. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-text-subtle">
             <Link

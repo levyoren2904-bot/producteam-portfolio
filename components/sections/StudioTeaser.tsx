@@ -33,7 +33,7 @@ export function StudioTeaser() {
             <SectionHeader
               label="Our Expertise"
               title="PRODUCT DESIGN FOR CRITICAL SYSTEMS"
-              description="producTeam helps organizations turn complex, high-stakes challenges into clear, scalable digital systems that perform under pressure and drive measurable business impact."
+              description="systemic helps organizations turn complex, high-stakes challenges into clear, scalable digital systems that perform under pressure and drive measurable business impact."
             />
 
             <motion.div

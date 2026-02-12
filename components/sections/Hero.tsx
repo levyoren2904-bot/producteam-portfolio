@@ -109,7 +109,7 @@ export function Hero() {
               >
                 <span className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-primary">
                   <span className="h-px w-8 bg-primary" />
-                  producTeam · Product Design for Critical Systems
+                  systemic · Product Design for Critical Systems
                 </span>
               </motion.div>
 
@@ -129,7 +129,7 @@ export function Hero() {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 className="mt-8 max-w-xl text-lg leading-relaxed text-text-muted md:text-xl"
               >
-                producTeam is a high-performance product design studio that
+                systemic is a high-performance product design studio that
                 combines UX, UI, and systems thinking to turn complex,
                 high-stakes environments into clear, scalable digital systems
                 for defense, infrastructure, and enterprise organizations.
@@ -203,7 +203,7 @@ export function Hero() {
 
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
                 <div className="absolute bottom-3 left-3 rounded-full bg-background/80 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-text-subtle">
-                  Studio Reel · producTeam
+                  Studio Reel · systemic
                 </div>
 
                 {/* Hover play icon */}

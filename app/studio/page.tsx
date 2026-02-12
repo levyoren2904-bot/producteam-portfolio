@@ -10,7 +10,7 @@ import { Values } from './Values';
 export const metadata: Metadata = {
   title: 'Studio',
   description:
-    'producTeam is a high-performance product design studio that helps organizations turn complex, high-stakes challenges into clear, scalable digital systems.',
+    'systemic is a high-performance product design studio that helps organizations turn complex, high-stakes challenges into clear, scalable digital systems.',
 };
 
 export default function StudioPage() {

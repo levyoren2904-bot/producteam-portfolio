@@ -6,7 +6,7 @@ import { ContactInfo } from './ContactInfo';
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Contact producTeam to discuss critical system product design for defense, infrastructure, and enterprise platforms.',
+    'Contact systemic to discuss critical system product design for defense, infrastructure, and enterprise platforms.',
 };
 
 export default function ContactPage() {

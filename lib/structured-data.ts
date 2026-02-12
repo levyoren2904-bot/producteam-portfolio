@@ -4,11 +4,11 @@ export function getOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'producTeam',
+    name: 'systemic',
     url: 'https://producteam-portfolio.vercel.app',
-    logo: 'https://producteam-portfolio.vercel.app/producTeam-logo.svg',
+    logo: 'https://producteam-portfolio.vercel.app/systemic-logo.svg',
     description:
-      'producTeam is a high-performance product design studio specializing in command centers, defense platforms, and critical infrastructure systems.',
+      'systemic is a high-performance product design studio specializing in command centers, defense platforms, and critical infrastructure systems.',
     sameAs: [
       'https://linkedin.com/company/producteam',
     ],
@@ -33,13 +33,13 @@ export function getWebsiteSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'producTeam',
+    name: 'systemic',
     url: 'https://producteam-portfolio.vercel.app',
     description:
-      'producTeam is a product design studio specializing in critical systems design for defense, infrastructure, and enterprise platforms.',
+      'systemic is a product design studio specializing in critical systems design for defense, infrastructure, and enterprise platforms.',
     publisher: {
       '@type': 'Organization',
-      name: 'producTeam',
+      name: 'systemic',
     },
   };
 }
@@ -53,7 +53,7 @@ export function getCaseStudySchema(frontmatter: CaseStudyFrontmatter) {
     dateCreated: `${frontmatter.year}`,
     creator: {
       '@type': 'Organization',
-      name: 'producTeam',
+      name: 'systemic',
     },
     about: {
       '@type': 'Thing',
@@ -73,7 +73,7 @@ export function getServiceSchema() {
     serviceType: 'UX/UI Design',
     provider: {
       '@type': 'Organization',
-      name: 'producTeam',
+      name: 'systemic',
     },
     areaServed: 'Worldwide',
     hasOfferCatalog: {

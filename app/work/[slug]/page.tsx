@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: caseStudy.frontmatter.title,
     description: caseStudy.frontmatter.summary,
     openGraph: {
-      title: `${caseStudy.frontmatter.title} | producTeam`,
+      title: `${caseStudy.frontmatter.title} | systemic`,
       description: caseStudy.frontmatter.summary,
       images: caseStudy.frontmatter.thumbnail
         ? [{ url: caseStudy.frontmatter.thumbnail }]

@@ -7,7 +7,7 @@ import { getAllCases } from '@/lib/mdx';
 export const metadata: Metadata = {
   title: 'Work',
   description:
-    'Selected case studies from producTeam, a product design studio specializing in critical systems for defense, infrastructure, and enterprise platforms.',
+    'Selected case studies from systemic, a product design studio specializing in critical systems for defense, infrastructure, and enterprise platforms.',
 };
 
 export default function WorkPage() {
